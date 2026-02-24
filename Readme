@@ -1,0 +1,45 @@
+🚀 Space Micro-Shooter JS Hero Galaxy
+Este é um jogo de tiro espacial desenvolvido com HTML5 Canvas e JavaScript puro. O projeto faz parte de um ecossistema de microserviços de alta performance (Go + gRPC) e foi projetado para ser leve, rápido e escalável.
+
+🛠️ Estado Atual
+O jogo já está em estado jogável e estável. Atualmente, ele roda como uma aplicação web estática, ideal para testes de latência e integração com o backend de Billing e Auth.
+
+Frontend: HTML5 / CSS3 / JavaScript (Canvas API).
+
+Servidor de Desenvolvimento: Node.js (serve).
+
+Porta Padrão: 3000.
+
+🚀 Como Rodar
+Para iniciar o servidor local e testar o jogo agora, use o comando abaixo no terminal na raiz do projeto:
+
+Bash
+npx serve .
+Após isso, acesse: http://localhost:3000
+
+🕹️ Funcionalidades Implementadas
+Game Loop: Otimizado para 60 FPS.
+
+Sistema de Colisão: Detecção precisa entre tiros, inimigos e o jogador.
+
+UI Dinâmica: Placar de pontos e sistema de vidas (❤️) renderizados em tempo real no rodapé.
+
+Assets Customizados: Suporte para naves, inimigos e planos de fundo animados.
+
+📱 Roadmap (Futuro)
+O objetivo final é a portabilidade total. Os próximos passos incluem:
+
+Versão Mobile: Migração para React Native ou transformação em um PWA (Progressive Web App) para rodar nativamente em celulares.
+
+Integração gRPC: Conexão direta com o backend em Go para persistência de High Scores e autenticação de usuários (Argon2).
+
+Segurança: Implementação de mTLS para comunicação entre o cliente e os microserviços de ranking.
+
+🔒 Arquitetura & Segurança
+Como parte de um sistema de nível bancário, este módulo segue rigorosos padrões:
+
+Backend: Go para processamento massivo de dados.
+
+Banco de Dados: Postgres (Finanças/Score) e MongoDB (Logs/Assets).
+
+Comunicação: gRPC para baixa latência.
